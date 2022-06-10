@@ -4,7 +4,12 @@
 /// <reference path="./node_modules/@types/p5/constants.d.ts" />
 
 
-  
+function preload() {
+    font1 = loadFont(".Environment Regular.ttf");
+    font2 = loadFont(".Environment Italic.ttf");
+  }
+
+
   class Particle {
     /**
      * @param {number} x the X position
@@ -110,6 +115,20 @@
   function draw() {
     if (firstpress == false) {
       noStroke();
+      textAlign(CENTER);
+    textFont(font1);
+    textSize(height / 12);
+    fill(40);
+    text(introduction, width / 2, height / 2, width / 3, height / 2);
+
+    textFont(font2);
+    textSize(20);
+    text(keyexplain, width / 2, height - 150);
+    textSize(20);
+    text(saveexplain, width / 2, height - 100);
+    textSize(20);
+    text(colorexplain, width / 2, height - 50);
+
   
       stroke(10);
       strokeWeight(2);
