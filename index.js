@@ -5,8 +5,8 @@
 
 
 function preload() {
-    font1 = loadFont(".Environment Regular.ttf");
-    font2 = loadFont(".Environment Italic.ttf");
+    font1 = loadFont("./Environment Regular.ttf");
+    font2 = loadFont("./Environment Italic.ttf");
   }
 
 
